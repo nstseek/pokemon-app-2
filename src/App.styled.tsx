@@ -1,8 +1,22 @@
-import styled, { CSSObject } from '@emotion/styled'
+import styled, { CSSObject } from '@emotion/styled';
 
-export const StyledText = styled.div(
+export const Wrapper = styled.div(
     (): CSSObject => ({
-        color: 'darkblue',
-        fontWeight: 'bold',
-    })
-)
+        display: 'flex',
+        flexDirection: 'column',
+        width: '100%',
+        height: '100%',
+    }),
+);
+
+export const Header = styled.div(
+    (): CSSObject => ({
+        backgroundColor: 'black',
+        width: '100%',
+        padding: 12,
+        color: 'white',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    }),
+);
